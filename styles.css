@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #5e548e;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    margin-left: 20px;
+}
+
+.navegacion .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #231942;
+    border-radius: 5px;
+}
+
+.barra-busqueda {
+    display: flex;
+    align-items: center;
+}
+
+.barra-busqueda input {
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.barra-busqueda button {
+    padding: 10px;
+    background-color: #231942;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-busqueda button:hover {
+    background-color: #2319422a;
+}
+
+.barra-busqueda button img {
+    width: 20px;
+    height: 20px;
+}
+
+.contenido-principal {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.articulo {
+    flex: 3;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.imagen-articulo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.fecha {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.contenido {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.comentarios {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.comentarios h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.comentarios textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.comentarios button {
+    background-color:#231942; 
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comentarios button:hover {
+    background-color: #9f86c0;
+}
+
+.barra-lateral {
+    width: 250px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.barra-lateral .seccion {
+    margin-bottom: 30px;
+}
+
+.barra-lateral h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.lista-categorias,
+.lista-articulos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-categorias li,
+.lista-articulos li {
+    margin-bottom: 10px;
+}
+
+.lista-categorias li a,
+.lista-articulos li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+.lista-categorias li a:hover,
+.lista-articulos li a:hover {
+    background-color: #ddd;
+}
+
+.redes-sociales .iconos-redes {
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociales .iconos-redes a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociales .iconos-redes a:hover img {
+    transform: scale(1.1);
+}
+
+.pie-de-pagina {
+    background-color: #5e548e;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-top: 2px solid #231942;
+}
+
+.informacion p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.enlaces {
+    display: flex;
+    gap: 20px;
+}
+
+.enlaces a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.enlaces a:hover {
+    color: #ddd;
+}
+
+
+@media (max-width: 1024px) {
+    .contenido-principal {
+        flex-direction: column;
+    }
+
+    .barra-lateral {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .articulo {
+        flex: 1;
+    }
+
+    .navegacion .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .encabezado {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .barra-busqueda {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center; 
+    }
+
+    .navegacion .menu {
+        justify-content: center; 
+        text-align: center; 
+        padding: 0;
+    }
+
+    .menu li {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+
+    .barra-lateral {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .pie-de-pagina {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+
+    .enlaces {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 50px;
+    }
+
+    .menu li a {
+        padding: 5px 0;
+    }
+
+    .articulo h2 {
+        font-size: 20px;
+    }
+
+    .comentarios textarea {
+        height: 60px;
+    }
+}
